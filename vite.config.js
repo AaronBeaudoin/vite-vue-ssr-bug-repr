@@ -1,10 +1,13 @@
-import vite from "vite";
-import VuePlugin from "@vitejs/plugin-vue";
-import SSRPlugin from "vite-plugin-ssr/plugin";
+const vuePlugin = require('@vitejs/plugin-vue')
 
-export default vite.defineConfig({
+/**
+ * @type {import('vite').UserConfig}
+ */
+module.exports = {
   plugins: [
-    VuePlugin(),
-    SSRPlugin()
-  ]
-});
+    vuePlugin()
+  ],
+  build: {
+    minify: false
+  }
+}
