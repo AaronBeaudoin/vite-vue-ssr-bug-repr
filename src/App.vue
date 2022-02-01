@@ -1,8 +1,17 @@
+<script setup>
+import { ref } from "vue";
+import Test from "./Test.vue";
+
+let test = ref(false);
+setTimeout(_ => test.value = true, 0);
+</script>
+
 <template>
-  <div>
+  <Test>
     <transition>
-      Hello minimal reproduction!
-      <!-- THIS COMMENT CAUSES CONSOLE ERROR -->
+      <div v-if="test">
+        Hello minimal reproduction!
+      </div>
     </transition>
-  </div>
+  </Test>
 </template>
