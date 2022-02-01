@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div>WORKS</div>
-    <div>
-      <div>DOESN'T WORK</div>
-    </div>
+    <transition>
+      Hello minimal reproduction!
+      <!-- THIS COMMENT CAUSES CONSOLE ERROR -->
+    </transition>
   </div>
 </template>
