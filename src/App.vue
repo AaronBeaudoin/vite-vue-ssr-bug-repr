@@ -4,8 +4,7 @@ import Test from "./Test.vue";
 
 <template>
   <Test>
-    <transition>
-      <div v-if="false"></div>
-    </transition>
+    <!-- 
+      test -->
   </Test>
 </template>
