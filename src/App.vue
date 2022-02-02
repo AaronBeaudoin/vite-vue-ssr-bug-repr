@@ -4,7 +4,6 @@ import Test from "./Test.vue";
 
 <template>
   <Test>
-    <!-- 
-      test -->
+    <!-- test -->
   </Test>
 </template>
